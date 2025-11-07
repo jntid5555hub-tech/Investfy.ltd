@@ -1,0 +1,36 @@
+/* ==== STYLE.CSS | INVESTFY ==== / / Theme: Modern Blue (#007bff) + White */
+
+/* Global reset */
+
+{ margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+
+
+body { background: #f5f7ff; color: #222; padding-bottom: 70px; /* space for bottom nav */ }
+
+/* Auth Pages (login & register) */ .auth-container { width: 90%; max-width: 400px; margin: auto; margin-top: 80px; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); text-align: center; }
+
+.auth-container h2 { margin-bottom: 18px; color: #007bff; }
+
+input { width: 100%; padding: 12px; margin-bottom: 12px; border-radius: 8px; border: 1px solid #ccc; }
+
+button { width: 100%; padding: 12px; border: none; border-radius: 8px; background: #007bff; color: #fff; font-size: 16px; cursor: pointer; }
+
+button:hover { opacity: 0.9; }
+
+/* Page layout (after login) */ .page-container { padding: 20px; text-align: center; }
+
+/* Bottom Navigation */ .bottom-nav { position: fixed; bottom: 0; left: 0; width: 100%; background: #ffffff; border-top: 2px solid #e4e4e4; display: flex; justify-content: space-around; padding: 12px 0; }
+
+.bottom-nav a { text-decoration: none; color: #444; font-size: 14px; font-weight: 500; }
+
+.bottom-nav a.active, .bottom-nav a:hover { color: #007bff; font-weight: bold; }
+
+/* Produk Tab */ .tab-container { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; }
+
+.tab-btn { padding: 10px 20px; border-radius: 8px; border: none; background: #d9e7ff; cursor: pointer; }
+
+.tab-btn.active { background: #007bff; color: #fff; font-weight: bold; }
+
+/* Profile Page */ .profile-box { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin-bottom: 25px; }
+
+.logout-btn { background: #ff3f3f; }

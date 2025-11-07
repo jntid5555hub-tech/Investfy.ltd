@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk | Investfy</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="page-container">
+        <h2>Produk Investasi</h2><div class="tab-container">
+        <button class="tab-btn active" onclick="showTab('produkA')">Produk A</button>
+        <button class="tab-btn" onclick="showTab('produkB')">Produk B</button>
+    </div>
+
+    <div id="produkA" class="tab-content" style="display: block;">
+        <p>Daftar Produk A akan tampil di sini.</p>
+    </div>
+
+    <div id="produkB" class="tab-content" style="display: none;">
+        <p>Daftar Produk B akan tampil di sini.</p>
+    </div>
+</div>
+
+<nav class="bottom-nav">
+    <a href="index.html">Beranda</a>
+    <a href="produk.html" class="active">Produk</a>
+    <a href="aset.html">Aset</a>
+    <a href="profil.html">Profil</a>
+</nav>
+
+<script>
+    function showTab(tabName) {
+        document.querySelectorAll('.tab-content').forEach((tab) => {
+            tab.style.display = 'none';
+        });
+
+        document.getElementById(tabName).style.display = 'block';
+
+        document.querySelectorAll('.tab-btn').forEach((btn) => {
+            btn.classList.remove('active');
+        });
+        event.target.classList.add('active');
+    }
+</script>
+<script src="app.js"></script>
+
+</body>
+</html>
